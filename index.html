@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/magic-mouse.css" />
+    <script type="text/javascript" src="dist/magic_mouse.js"></script>
+    <script src="konami.js"></script>
+    <title>TKTeam</title>
+</head>
+<body>
+    <div class="container">
+        <a class="btn magic-hover magic-hover__square"><span>cloud</span><em></em></a>
+        <a class="btn magic-hover magic-hover__square"><span>jelly</span><em></em></a>
+        <a class="btn magic-hover magic-hover__square"><span>p2p</span><em></em></a>
+        <a class="btn magic-hover magic-hover__square"><span>ptero</span><em></em></a>
+        <a class="btn magic-hover magic-hover__square"><span>alias</span><em></em></a>
+    </div>
+</body>
+</html>
+
+<script>
+    options = {
+        "cursorOuter": "circle-basic",
+        "hoverEffect": "circle-move",
+        "hoverItemMove": false,
+        "defaultCursor": false,
+        "outerWidth": 30,
+        "outerHeight": 30
+    };
+    magicMouse(options);
+
+    var easter_egg = new Konami(function() { 
+        var audio = new Audio('./media/merde.mp3');
+        audio.play();
+    });
+</script>
+
