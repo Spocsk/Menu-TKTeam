@@ -6,11 +6,19 @@
 html, body {
     height: 100vh;
     width: 100vw;
-    background-color: #006b62;
+    background-color: #0d0f1b;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.head {
+    margin-bottom: 30px;
+}
+
+.head-logo {
+    width: 140px;
+    height: 140px;
 }
 
 .container {
@@ -53,6 +61,18 @@ html, body {
     background: #fff;
     width: 47%;
     z-index: 1;
-  }
+}
 
+@media screen and (max-height: 700px) {
+    .head {
+      display: none;
+    }
+}
+
+
+@media screen and (max-height: 635px) {
+    .container .btn {
+      margin-top: 20px;
+    }
+}
 
